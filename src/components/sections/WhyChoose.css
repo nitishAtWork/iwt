@@ -1,0 +1,287 @@
+.why-sect{
+    position: relative;
+    overflow: hidden;
+    /* overflow: visible; */
+    z-index: 4;
+}
+.why-sect .shape-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 24%;
+    z-index: -1;
+}
+.why-sect .shape-left{
+    position: absolute;
+    left: -8%;
+    bottom: 8%;
+    width: 42%;
+    z-index: -1;
+}
+.countup_box{
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    overflow: hidden;
+    border-right: 2px dashed gray;
+}
+.counter-box{
+    margin: 40px 0;
+    border-top: 2px solid rgb(241, 241, 241);
+    border-bottom: 2px solid rgb(241, 241, 241);
+    padding-top: 30px;
+}
+.why_icn_box{
+    width: 100%;
+    background: white;
+    box-shadow: 0px 0px 4px gray;
+    position: relative;
+    height: fit-content;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.countup_box .icon-box-bg {
+    position: absolute;
+    left: -100px;
+    top: -37px;
+    width: 217px;
+    height: 192px;
+    border-radius: 50%;
+    text-align: right;
+    font-size: 28px;
+    /* background: var(--primry-clr); */
+    /* background: linear-gradient(to right, #a9003d 0%, #f30030 100%); */
+}
+.countup_box .icon-box-bg:before {
+    position: absolute;
+    content: '';
+    left: -15px;
+    top: -5px;
+    right: -12px;
+    bottom: 0px;
+    opacity: 0.10;
+    border-radius: 50%;
+    /* background: #a9003d; */
+}
+.icon-box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+    align-items: center;
+}
+.icon-box .cout-icon{
+    font-size: 40px;
+    color: var(--primry-clr);
+    padding-left: 32px;
+}
+.icon-box .cout-icon img{
+    height: 65px;
+    width: auto;
+}
+.icon-box .count-text{
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--primry-clr);
+    font-weight: 900;
+    line-height: 1;
+}
+.icon-box .count-name{
+    font-size: 19px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    line-height: 1;
+}
+@media (max-width: 768px) {
+    .icon-box .count-text{
+        font-size: 42px;
+    }
+    .icon-box .col-8{
+        padding-left: 10%;
+    }
+}
+
+.why-img{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding-bottom: 15%;
+}
+.why-text span{
+    /* content: ''; */
+    position: absolute;
+    right: -15%;
+    top: 22%;
+    width: fit-content;
+    height: fit-content;
+    transform: rotate(90deg);
+    color: transparent;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--primry-clr);
+    /* background: var(--primry-clr);
+    -webkit-animation: jumpAni 7s linear infinite;
+    animation: jumpAni 7s linear infinite; */
+}
+@media (max-width: 550px) {
+    .why-text span{
+    right: -22%;
+    top: 30%;
+    font-size: 8vw;
+    }
+}
+.why-left-img{
+    width: 80%;
+}
+.why-left-img{
+    width: 80%;
+    border: 6px solid var(--primry-clr);
+}
+.why-right-img{
+    position: absolute;
+    right: 4%;
+    bottom: 0;
+    width: 45%;
+}
+.why-right-img img{
+    border: 6px solid var(--secondary-clr);
+    width: 100%;
+    border-top-left-radius: 50%;
+}
+.why-left-img .color-layer {
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+    bottom: -36%;
+    width: 100%;
+    height: 80%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background: var(--primry-clr);
+    background: linear-gradient(to right, #a9003d 0%, #f30030 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why-left-img .color-layer span{
+    font-size: 5vw;
+    -webkit-text-fill-color: #ffffff00;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-weight: 800;
+    margin-top: -75px;
+}
+.list-why-us{
+    width: 100%;
+}
+.list-why-us li{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin: 5px 0;
+    list-style: none;
+    padding-left: 21px;
+    position: relative;
+}
+.list-why-us li::before{
+    content: '✓';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    color: green;
+}
+.award-img{
+    max-width: 100px;
+    margin-left: 30px;
+}
+.award-cont{
+    max-width: calc(100% - 150px);
+}
+.award-cont p.title{
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    line-height: 1.28;
+    margin-bottom: 10px;
+}
+
+.skill-feature_title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 4px;
+}
+.skill-feature .progress {
+    position: relative;
+    height: 8px;
+    background-color: transparent;
+    overflow: visible;
+}
+.skill-feature .progress .progress-value {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    background: var(--primry-clr);
+    padding: 0 8px;
+    position: absolute;
+    right: -24px;
+    top: -35px;
+}
+.skill-feature .progress .progress-value:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 15px;
+    height: 15px;
+    border-top: solid 15px var(--primry-clr);
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.skill-feature .progress:after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: rgba(18, 18, 18, 0.4);
+}
+.skill-feature .progress .progress-bar {
+    position: relative;
+    height: auto;
+    overflow: visible;
+    background-color: var(--primry-clr);
+    width: 0;
+    opacity: 1;
+    transition: all 600ms linear;
+}
+.client-count{
+    width: fit-content;
+    margin-left: 12px;
+}
+.client-count span{
+    font-size: 24px;
+    color: black;
+    line-height:1;
+    font-weight: 500;
+}
+.client-count p{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0;
+    line-height:1;
+}
